@@ -1,0 +1,86 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_id_penilaian}
+			<a href="#" id="addSearchControl_id_penilaian" class="addSearchControl" {$addSearchControl_id_penilaian_attrs}>Id Penilaian</a><br>
+		{END addSearch_id_penilaian}
+		{BEGIN addSearch_nip}
+			<a href="#" id="addSearchControl_nip" class="addSearchControl" {$addSearchControl_nip_attrs}>Nip</a><br>
+		{END addSearch_nip}
+		{BEGIN addSearch_sk_penilaian}
+			<a href="#" id="addSearchControl_sk_penilaian" class="addSearchControl" {$addSearchControl_sk_penilaian_attrs}>Sk Penilaian</a><br>
+		{END addSearch_sk_penilaian}
+		{BEGIN addSearch_periode_penilaian}
+			<a href="#" id="addSearchControl_periode_penilaian" class="addSearchControl" {$addSearchControl_periode_penilaian_attrs}>Periode Penilaian</a><br>
+		{END addSearch_periode_penilaian}
+		{BEGIN addSearch_judul_penilaian}
+			<a href="#" id="addSearchControl_judul_penilaian" class="addSearchControl" {$addSearchControl_judul_penilaian_attrs}>Judul Penilaian</a><br>
+		{END addSearch_judul_penilaian}
+		{BEGIN addSearch_indikator_a}
+			<a href="#" id="addSearchControl_indikator_a" class="addSearchControl" {$addSearchControl_indikator_a_attrs}>Indikator A</a><br>
+		{END addSearch_indikator_a}
+		{BEGIN addSearch_indikator_b}
+			<a href="#" id="addSearchControl_indikator_b" class="addSearchControl" {$addSearchControl_indikator_b_attrs}>Indikator B</a><br>
+		{END addSearch_indikator_b}
+		{BEGIN addSearch_indikator_c}
+			<a href="#" id="addSearchControl_indikator_c" class="addSearchControl" {$addSearchControl_indikator_c_attrs}>Indikator C</a><br>
+		{END addSearch_indikator_c}
+		{BEGIN addSearch_indikator_d}
+			<a href="#" id="addSearchControl_indikator_d" class="addSearchControl" {$addSearchControl_indikator_d_attrs}>Indikator D</a><br>
+		{END addSearch_indikator_d}
+		{BEGIN addSearch_indikator_e}
+			<a href="#" id="addSearchControl_indikator_e" class="addSearchControl" {$addSearchControl_indikator_e_attrs}>Indikator E</a><br>
+		{END addSearch_indikator_e}
+		{BEGIN addSearch_satuan}
+			<a href="#" id="addSearchControl_satuan" class="addSearchControl" {$addSearchControl_satuan_attrs}>Satuan</a><br>
+		{END addSearch_satuan}
+		{BEGIN addSearch_sasaran}
+			<a href="#" id="addSearchControl_sasaran" class="addSearchControl" {$addSearchControl_sasaran_attrs}>Sasaran</a><br>
+		{END addSearch_sasaran}
+		{BEGIN addSearch_pencapaian}
+			<a href="#" id="addSearchControl_pencapaian" class="addSearchControl" {$addSearchControl_pencapaian_attrs}>Pencapaian</a><br>
+		{END addSearch_pencapaian}
+		{BEGIN addSearch_hasil_penilaian}
+			<a href="#" id="addSearchControl_hasil_penilaian" class="addSearchControl" {$addSearchControl_hasil_penilaian_attrs}>Hasil Penilaian</a><br>
+		{END addSearch_hasil_penilaian}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,71 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_id_absensi}
+			<a href="#" id="addSearchControl_id_absensi" class="addSearchControl" {$addSearchControl_id_absensi_attrs}>Id Absensi</a><br>
+		{END addSearch_id_absensi}
+		{BEGIN addSearch_nip}
+			<a href="#" id="addSearchControl_nip" class="addSearchControl" {$addSearchControl_nip_attrs}>Nip</a><br>
+		{END addSearch_nip}
+		{BEGIN addSearch_tanggal_absen}
+			<a href="#" id="addSearchControl_tanggal_absen" class="addSearchControl" {$addSearchControl_tanggal_absen_attrs}>Tanggal Absen</a><br>
+		{END addSearch_tanggal_absen}
+		{BEGIN addSearch_jam_masuk}
+			<a href="#" id="addSearchControl_jam_masuk" class="addSearchControl" {$addSearchControl_jam_masuk_attrs}>Jam Masuk</a><br>
+		{END addSearch_jam_masuk}
+		{BEGIN addSearch_jam_keluar}
+			<a href="#" id="addSearchControl_jam_keluar" class="addSearchControl" {$addSearchControl_jam_keluar_attrs}>Jam Keluar</a><br>
+		{END addSearch_jam_keluar}
+		{BEGIN addSearch_status_masuk}
+			<a href="#" id="addSearchControl_status_masuk" class="addSearchControl" {$addSearchControl_status_masuk_attrs}>Status Masuk</a><br>
+		{END addSearch_status_masuk}
+		{BEGIN addSearch_status_keluar}
+			<a href="#" id="addSearchControl_status_keluar" class="addSearchControl" {$addSearchControl_status_keluar_attrs}>Status Keluar</a><br>
+		{END addSearch_status_keluar}
+		{BEGIN addSearch_ket}
+			<a href="#" id="addSearchControl_ket" class="addSearchControl" {$addSearchControl_ket_attrs}>Ket</a><br>
+		{END addSearch_ket}
+		{BEGIN addSearch_terlambat}
+			<a href="#" id="addSearchControl_terlambat" class="addSearchControl" {$addSearchControl_terlambat_attrs}>Terlambat</a><br>
+		{END addSearch_terlambat}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

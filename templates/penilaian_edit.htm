@@ -1,0 +1,329 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_edit}
+<table class="runner-c runner-c-edit" cellpadding="0" align=center>
+
+
+<tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" ><div  class="runner-b-editheader {$brickclass_editheader}">Penilaian, Edit record [
+Id Penilaian: {$show_key1}
+]</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
+
+
+{BEGIN message_block}
+<tr  class="runner-row style1 runner-b-message {$brickclass_message}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" ><div class="runner-message">{$message}</div></td><td class="runner-cr"></td></tr>{END message_block}
+
+
+
+<tr  class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents runner-wrapper" >
+
+{BEGIN container_fields}
+<table class="runner-c runner-c-fields" cellpadding="0" >
+
+
+	{BEGIN nip_fieldblock}
+	<tr class="runner-toprow header style1 runner-b-editfields"><td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_nip {$fielddispclass_nip}">
+				{BEGIN nip_label}Nip{END nip_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_nip {$fielddispclass_nip}">
+				{$nip_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"><img src="images/spacer.gif"></td></tr>
+{END nip_fieldblock}
+	{BEGIN sk_penilaian_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_sk_penilaian {$fielddispclass_sk_penilaian}">
+				{BEGIN sk_penilaian_label}Sk Penilaian{END sk_penilaian_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_sk_penilaian {$fielddispclass_sk_penilaian}">
+				{$sk_penilaian_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END sk_penilaian_fieldblock}
+	{BEGIN periode_penilaian_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_periode_penilaian {$fielddispclass_periode_penilaian}">
+				{BEGIN periode_penilaian_label}Periode Penilaian{END periode_penilaian_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_periode_penilaian {$fielddispclass_periode_penilaian}">
+				{$periode_penilaian_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END periode_penilaian_fieldblock}
+	{BEGIN judul_penilaian_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_judul_penilaian {$fielddispclass_judul_penilaian}">
+				{BEGIN judul_penilaian_label}Judul Penilaian{END judul_penilaian_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_judul_penilaian {$fielddispclass_judul_penilaian}">
+				{$judul_penilaian_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END judul_penilaian_fieldblock}
+	{BEGIN indikator_a_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_indikator_a {$fielddispclass_indikator_a}">
+				{BEGIN indikator_a_label}Indikator A{END indikator_a_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_indikator_a {$fielddispclass_indikator_a}">
+				{$indikator_a_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END indikator_a_fieldblock}
+	{BEGIN indikator_b_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_indikator_b {$fielddispclass_indikator_b}">
+				{BEGIN indikator_b_label}Indikator B{END indikator_b_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_indikator_b {$fielddispclass_indikator_b}">
+				{$indikator_b_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END indikator_b_fieldblock}
+	{BEGIN indikator_c_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_indikator_c {$fielddispclass_indikator_c}">
+				{BEGIN indikator_c_label}Indikator C{END indikator_c_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_indikator_c {$fielddispclass_indikator_c}">
+				{$indikator_c_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END indikator_c_fieldblock}
+	{BEGIN indikator_d_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_indikator_d {$fielddispclass_indikator_d}">
+				{BEGIN indikator_d_label}Indikator D{END indikator_d_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_indikator_d {$fielddispclass_indikator_d}">
+				{$indikator_d_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END indikator_d_fieldblock}
+	{BEGIN indikator_e_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_indikator_e {$fielddispclass_indikator_e}">
+				{BEGIN indikator_e_label}Indikator E{END indikator_e_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_indikator_e {$fielddispclass_indikator_e}">
+				{$indikator_e_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END indikator_e_fieldblock}
+	{BEGIN satuan_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_satuan {$fielddispclass_satuan}">
+				{BEGIN satuan_label}Satuan{END satuan_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_satuan {$fielddispclass_satuan}">
+				{$satuan_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END satuan_fieldblock}
+	{BEGIN sasaran_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_sasaran {$fielddispclass_sasaran}">
+				{BEGIN sasaran_label}Sasaran{END sasaran_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_sasaran {$fielddispclass_sasaran}">
+				{$sasaran_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END sasaran_fieldblock}
+	{BEGIN pencapaian_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_pencapaian {$fielddispclass_pencapaian}">
+				{BEGIN pencapaian_label}Pencapaian{END pencapaian_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_pencapaian {$fielddispclass_pencapaian}">
+				{$pencapaian_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END pencapaian_fieldblock}
+	{BEGIN hasil_penilaian_fieldblock}
+	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_hasil_penilaian {$fielddispclass_hasil_penilaian}">
+				{BEGIN hasil_penilaian_label}Hasil Penilaian{END hasil_penilaian_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_hasil_penilaian {$fielddispclass_hasil_penilaian}">
+				{$hasil_penilaian_editcontrol}&nbsp;
+			</div>
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END hasil_penilaian_fieldblock}
+
+
+
+{BEGIN legend}
+<tr  class="runner-row style3 runner-b-legend {$brickclass_legend}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><span id="required_block{$id}">
+<img src="images/icon_required.gif" alt="bullet"> - Required field
+</span>
+</td><td class="runner-cr"></td></tr>{END legend}
+
+
+
+<tr  class="runner-row style2 runner-b-editbuttons {$brickclass_editbuttons}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2>{BEGIN save_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$savebutton_attrs}>Save</a>
+</span>
+{END save_button}
+{BEGIN reset_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$resetbutton_attrs}>Reset</a>
+</span>
+{END reset_button}
+{BEGIN prev_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$prevbutton_attrs}>&nbsp;<<<&nbsp;</a>
+</span>
+{END prev_button}
+{BEGIN back_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$backbutton_attrs}>Back to list</a>
+</span>
+{END back_button}
+{BEGIN next_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$nextbutton_attrs}>&nbsp;>>>&nbsp;</a>
+</span>
+{END next_button}
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_fields}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_fields}
+
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_edit}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_edit}
+
+
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

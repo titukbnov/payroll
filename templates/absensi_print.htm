@@ -1,0 +1,292 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_master}
+<table class="runner-c runner-c-master" cellpadding="0" >
+<tr class="{$cheaderclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN mastertable_block}
+<td  class="runner-cc runner-bl runner-b-masterinfoprint" {$brickclass_masterinfoprint}><span>{$showmasterfile}
+</span></td>
+{END mastertable_block}
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_master}
+
+
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Absensi</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="runner-s-grid">	
+	<table class="runner-c runner-c-grid" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+		<tr class="runner-toprow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			{BEGIN record_header}
+					{BEGIN id_absensi_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN id_absensi_fieldheader}
+	<b>Id Absensi</b>
+	{END id_absensi_fieldheader}
+</th>
+{END id_absensi_fieldheadercolumn}
+	{BEGIN nip_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN nip_fieldheader}
+	<b>Nip</b>
+	{END nip_fieldheader}
+</th>
+{END nip_fieldheadercolumn}
+	{BEGIN tanggal_absen_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tanggal_absen_fieldheader}
+	<b>Tanggal Absen</b>
+	{END tanggal_absen_fieldheader}
+</th>
+{END tanggal_absen_fieldheadercolumn}
+	{BEGIN jam_masuk_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN jam_masuk_fieldheader}
+	<b>Jam Masuk</b>
+	{END jam_masuk_fieldheader}
+</th>
+{END jam_masuk_fieldheadercolumn}
+	{BEGIN jam_keluar_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN jam_keluar_fieldheader}
+	<b>Jam Keluar</b>
+	{END jam_keluar_fieldheader}
+</th>
+{END jam_keluar_fieldheadercolumn}
+	{BEGIN status_masuk_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN status_masuk_fieldheader}
+	<b>Status Masuk</b>
+	{END status_masuk_fieldheader}
+</th>
+{END status_masuk_fieldheadercolumn}
+	{BEGIN status_keluar_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN status_keluar_fieldheader}
+	<b>Status Keluar</b>
+	{END status_keluar_fieldheader}
+</th>
+{END status_keluar_fieldheadercolumn}
+	{BEGIN ket_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN ket_fieldheader}
+	<b>Ket</b>
+	{END ket_fieldheader}
+</th>
+{END ket_fieldheadercolumn}
+	{BEGIN terlambat_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN terlambat_fieldheader}
+	<b>Terlambat</b>
+	{END terlambat_fieldheader}
+</th>
+{END terlambat_fieldheadercolumn}
+		
+			{END record_header}
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+			{BEGIN endrecordheader_block}
+			<td class="runner-cs">&nbsp;</td>
+			{END endrecordheader_block}
+		</tr>
+	{END grid_header}
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="runner-row style1" {$rowattrs} {$rowstyle} {$rowstyle}>
+		<td class="runner-cl"></td>
+		{BEGIN grid_record}
+				{BEGIN id_absensi_fieldcolumn}
+<td  class="runner-cc {$id_absensi_class}" {$id_absensi_style}>
+	{$id_absensi_value}
+</td>
+{END id_absensi_fieldcolumn}
+	{BEGIN nip_fieldcolumn}
+<td  class="runner-cc {$nip_class}" {$nip_style}>
+	{$nip_value}
+</td>
+{END nip_fieldcolumn}
+	{BEGIN tanggal_absen_fieldcolumn}
+<td  class="runner-cc {$tanggal_absen_class}" {$tanggal_absen_style}>
+	{$tanggal_absen_value}
+</td>
+{END tanggal_absen_fieldcolumn}
+	{BEGIN jam_masuk_fieldcolumn}
+<td  class="runner-cc {$jam_masuk_class}" {$jam_masuk_style}>
+	{$jam_masuk_value}
+</td>
+{END jam_masuk_fieldcolumn}
+	{BEGIN jam_keluar_fieldcolumn}
+<td  class="runner-cc {$jam_keluar_class}" {$jam_keluar_style}>
+	{$jam_keluar_value}
+</td>
+{END jam_keluar_fieldcolumn}
+	{BEGIN status_masuk_fieldcolumn}
+<td  class="runner-cc {$status_masuk_class}" {$status_masuk_style}>
+	{$status_masuk_value}
+</td>
+{END status_masuk_fieldcolumn}
+	{BEGIN status_keluar_fieldcolumn}
+<td  class="runner-cc {$status_keluar_class}" {$status_keluar_style}>
+	{$status_keluar_value}
+</td>
+{END status_keluar_fieldcolumn}
+	{BEGIN ket_fieldcolumn}
+<td  class="runner-cc {$ket_class}" {$ket_style}>
+	{$ket_value}
+</td>
+{END ket_fieldcolumn}
+	{BEGIN terlambat_fieldcolumn}
+<td  class="runner-cc {$terlambat_class}" {$terlambat_style}>
+	{$terlambat_value}
+</td>
+{END terlambat_fieldcolumn}
+
+		{END grid_record}
+		<td class="runner-cr"></td>
+		{BEGIN endrecord_block}
+		<td class="runner-cs">&nbsp;</td>
+		{END endrecord_block}
+	</tr>
+{END grid_row}
+										
+								<tr class="runner-bottomrow style1">
+									<td class="runner-cl"><img src="images/spacer.gif"></td>
+									{BEGIN record_footer}
+									{BEGIN id_absensi_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END id_absensi_fieldfootercolumn}
+{BEGIN nip_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END nip_fieldfootercolumn}
+{BEGIN tanggal_absen_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tanggal_absen_fieldfootercolumn}
+{BEGIN jam_masuk_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END jam_masuk_fieldfootercolumn}
+{BEGIN jam_keluar_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END jam_keluar_fieldfootercolumn}
+{BEGIN status_masuk_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END status_masuk_fieldfootercolumn}
+{BEGIN status_keluar_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END status_keluar_fieldfootercolumn}
+{BEGIN ket_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END ket_fieldfootercolumn}
+{BEGIN terlambat_fieldfootercolumn}
+<td class="runner-cc runner-clast"></td>
+{END terlambat_fieldfootercolumn}
+
+									{END record_footer}
+									<td class="runner-cr"><img src="images/spacer.gif"></td>
+									{BEGIN endrecordtotals_block}
+									<td class="runner-cs"></td>
+									{END endrecordtotals_block}
+								</tr>
+
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

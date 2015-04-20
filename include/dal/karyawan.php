@@ -1,0 +1,43 @@
+<?php
+$dalTablekaryawan = array();
+$dalTablekaryawan["nip"] = array("type"=>200,"varname"=>"nip");
+$dalTablekaryawan["nama"] = array("type"=>200,"varname"=>"nama");
+$dalTablekaryawan["jenis_kelamin"] = array("type"=>129,"varname"=>"jenis_kelamin");
+$dalTablekaryawan["tempat_lahir"] = array("type"=>200,"varname"=>"tempat_lahir");
+$dalTablekaryawan["tanggal_lahir"] = array("type"=>7,"varname"=>"tanggal_lahir");
+$dalTablekaryawan["golongan_darah"] = array("type"=>129,"varname"=>"golongan_darah");
+$dalTablekaryawan["agama"] = array("type"=>129,"varname"=>"agama");
+$dalTablekaryawan["status_pernikahan"] = array("type"=>129,"varname"=>"status_pernikahan");
+$dalTablekaryawan["alamat_lengkap"] = array("type"=>201,"varname"=>"alamat_lengkap");
+$dalTablekaryawan["telepon_rumah"] = array("type"=>3,"varname"=>"telepon_rumah");
+$dalTablekaryawan["ponsel"] = array("type"=>3,"varname"=>"ponsel");
+$dalTablekaryawan["email"] = array("type"=>200,"varname"=>"email");
+$dalTablekaryawan["hobi"] = array("type"=>200,"varname"=>"hobi");
+$dalTablekaryawan["pendidikan"] = array("type"=>129,"varname"=>"pendidikan");
+$dalTablekaryawan["tanggal_masuk"] = array("type"=>7,"varname"=>"tanggal_masuk");
+$dalTablekaryawan["status_kerja"] = array("type"=>129,"varname"=>"status_kerja");
+$dalTablekaryawan["departemen"] = array("type"=>200,"varname"=>"departemen");
+$dalTablekaryawan["organisasi"] = array("type"=>200,"varname"=>"organisasi");
+$dalTablekaryawan["golongan"] = array("type"=>200,"varname"=>"golongan");
+$dalTablekaryawan["jabatan"] = array("type"=>200,"varname"=>"jabatan");
+$dalTablekaryawan["no_ktp"] = array("type"=>3,"varname"=>"no_ktp");
+$dalTablekaryawan["no_sim"] = array("type"=>3,"varname"=>"no_sim");
+$dalTablekaryawan["no_paspor"] = array("type"=>200,"varname"=>"no_paspor");
+$dalTablekaryawan["no_npwp"] = array("type"=>3,"varname"=>"no_npwp");
+$dalTablekaryawan["no_jamsostek"] = array("type"=>200,"varname"=>"no_jamsostek");
+$dalTablekaryawan["no_asuransi"] = array("type"=>200,"varname"=>"no_asuransi");
+$dalTablekaryawan["no_pensiun"] = array("type"=>200,"varname"=>"no_pensiun");
+$dalTablekaryawan["pensiun"] = array("type"=>16,"varname"=>"pensiun");
+$dalTablekaryawan["tanggal_pensiun"] = array("type"=>7,"varname"=>"tanggal_pensiun");
+$dalTablekaryawan["foto"] = array("type"=>200,"varname"=>"foto");
+$dalTablekaryawan["sk_tambahan"] = array("type"=>200,"varname"=>"sk_tambahan");
+$dalTablekaryawan["keterangan"] = array("type"=>200,"varname"=>"keterangan");
+$dalTablekaryawan["id_login"] = array("type"=>3,"varname"=>"id_login");
+$dalTablekaryawan["id_pelatihan"] = array("type"=>3,"varname"=>"id_pelatihan");
+$dalTablekaryawan["id_penghasilan"] = array("type"=>3,"varname"=>"id_penghasilan");
+$dalTablekaryawan["id_penilaian"] = array("type"=>3,"varname"=>"id_penilaian");
+$dalTablekaryawan["id_absensi"] = array("type"=>3,"varname"=>"id_absensi");
+	$dalTablekaryawan["nip"]["key"]=true;
+$dal_info["karyawan"]=&$dalTablekaryawan;
+
+?>

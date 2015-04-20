@@ -1,0 +1,412 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_master}
+<table class="runner-c runner-c-master" cellpadding="0" >
+<tr class="{$cheaderclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN mastertable_block}
+<td  class="runner-cc runner-bl runner-b-masterinfoprint" {$brickclass_masterinfoprint}><span>{$showmasterfile}
+</span></td>
+{END mastertable_block}
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_master}
+
+
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Penghasilan</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="runner-s-grid">	
+	<table class="runner-c runner-c-grid" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+		<tr class="runner-toprow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			{BEGIN record_header}
+					{BEGIN id_penghasilan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN id_penghasilan_fieldheader}
+	<b>Id Penghasilan</b>
+	{END id_penghasilan_fieldheader}
+</th>
+{END id_penghasilan_fieldheadercolumn}
+	{BEGIN nip_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN nip_fieldheader}
+	<b>Nip</b>
+	{END nip_fieldheader}
+</th>
+{END nip_fieldheadercolumn}
+	{BEGIN gaji_pokok_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN gaji_pokok_fieldheader}
+	<b>Gaji Pokok</b>
+	{END gaji_pokok_fieldheader}
+</th>
+{END gaji_pokok_fieldheadercolumn}
+	{BEGIN tunjangan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tunjangan_fieldheader}
+	<b>Tunjangan</b>
+	{END tunjangan_fieldheader}
+</th>
+{END tunjangan_fieldheadercolumn}
+	{BEGIN insentif_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN insentif_fieldheader}
+	<b>Insentif</b>
+	{END insentif_fieldheader}
+</th>
+{END insentif_fieldheadercolumn}
+	{BEGIN bonus_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN bonus_fieldheader}
+	<b>Bonus</b>
+	{END bonus_fieldheader}
+</th>
+{END bonus_fieldheadercolumn}
+	{BEGIN thr_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN thr_fieldheader}
+	<b>Thr</b>
+	{END thr_fieldheader}
+</th>
+{END thr_fieldheadercolumn}
+	{BEGIN pajak_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN pajak_fieldheader}
+	<b>Pajak</b>
+	{END pajak_fieldheader}
+</th>
+{END pajak_fieldheadercolumn}
+	{BEGIN pinjaman_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN pinjaman_fieldheader}
+	<b>Pinjaman</b>
+	{END pinjaman_fieldheader}
+</th>
+{END pinjaman_fieldheadercolumn}
+	{BEGIN gaji_bersih_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN gaji_bersih_fieldheader}
+	<b>Gaji Bersih</b>
+	{END gaji_bersih_fieldheader}
+</th>
+{END gaji_bersih_fieldheadercolumn}
+	{BEGIN cara_bayar_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN cara_bayar_fieldheader}
+	<b>Cara Bayar</b>
+	{END cara_bayar_fieldheader}
+</th>
+{END cara_bayar_fieldheadercolumn}
+	{BEGIN tanggal_bayar_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tanggal_bayar_fieldheader}
+	<b>Tanggal Bayar</b>
+	{END tanggal_bayar_fieldheader}
+</th>
+{END tanggal_bayar_fieldheadercolumn}
+	{BEGIN tanggal_transfer_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tanggal_transfer_fieldheader}
+	<b>Tanggal Transfer</b>
+	{END tanggal_transfer_fieldheader}
+</th>
+{END tanggal_transfer_fieldheadercolumn}
+	{BEGIN nama_bank_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN nama_bank_fieldheader}
+	<b>Nama Bank</b>
+	{END nama_bank_fieldheader}
+</th>
+{END nama_bank_fieldheadercolumn}
+	{BEGIN nama_rekening_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN nama_rekening_fieldheader}
+	<b>Nama Rekening</b>
+	{END nama_rekening_fieldheader}
+</th>
+{END nama_rekening_fieldheadercolumn}
+	{BEGIN no_rekening_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_rekening_fieldheader}
+	<b>No Rekening</b>
+	{END no_rekening_fieldheader}
+</th>
+{END no_rekening_fieldheadercolumn}
+	{BEGIN sk_penghasilan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN sk_penghasilan_fieldheader}
+	<b>Sk Penghasilan</b>
+	{END sk_penghasilan_fieldheader}
+</th>
+{END sk_penghasilan_fieldheadercolumn}
+		
+			{END record_header}
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+			{BEGIN endrecordheader_block}
+			<td class="runner-cs">&nbsp;</td>
+			{END endrecordheader_block}
+		</tr>
+	{END grid_header}
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="runner-row style1" {$rowattrs} {$rowstyle} {$rowstyle}>
+		<td class="runner-cl"></td>
+		{BEGIN grid_record}
+				{BEGIN id_penghasilan_fieldcolumn}
+<td  class="runner-cc {$id_penghasilan_class}" {$id_penghasilan_style}>
+	{$id_penghasilan_value}
+</td>
+{END id_penghasilan_fieldcolumn}
+	{BEGIN nip_fieldcolumn}
+<td  class="runner-cc {$nip_class}" {$nip_style}>
+	{$nip_value}
+</td>
+{END nip_fieldcolumn}
+	{BEGIN gaji_pokok_fieldcolumn}
+<td  class="runner-cc {$gaji_pokok_class}" {$gaji_pokok_style}>
+	{$gaji_pokok_value}
+</td>
+{END gaji_pokok_fieldcolumn}
+	{BEGIN tunjangan_fieldcolumn}
+<td  class="runner-cc {$tunjangan_class}" {$tunjangan_style}>
+	{$tunjangan_value}
+</td>
+{END tunjangan_fieldcolumn}
+	{BEGIN insentif_fieldcolumn}
+<td  class="runner-cc {$insentif_class}" {$insentif_style}>
+	{$insentif_value}
+</td>
+{END insentif_fieldcolumn}
+	{BEGIN bonus_fieldcolumn}
+<td  class="runner-cc {$bonus_class}" {$bonus_style}>
+	{$bonus_value}
+</td>
+{END bonus_fieldcolumn}
+	{BEGIN thr_fieldcolumn}
+<td  class="runner-cc {$thr_class}" {$thr_style}>
+	{$thr_value}
+</td>
+{END thr_fieldcolumn}
+	{BEGIN pajak_fieldcolumn}
+<td  class="runner-cc {$pajak_class}" {$pajak_style}>
+	{$pajak_value}
+</td>
+{END pajak_fieldcolumn}
+	{BEGIN pinjaman_fieldcolumn}
+<td  class="runner-cc {$pinjaman_class}" {$pinjaman_style}>
+	{$pinjaman_value}
+</td>
+{END pinjaman_fieldcolumn}
+	{BEGIN gaji_bersih_fieldcolumn}
+<td  class="runner-cc {$gaji_bersih_class}" {$gaji_bersih_style}>
+	{$gaji_bersih_value}
+</td>
+{END gaji_bersih_fieldcolumn}
+	{BEGIN cara_bayar_fieldcolumn}
+<td  class="runner-cc {$cara_bayar_class}" {$cara_bayar_style}>
+	{$cara_bayar_value}
+</td>
+{END cara_bayar_fieldcolumn}
+	{BEGIN tanggal_bayar_fieldcolumn}
+<td  class="runner-cc {$tanggal_bayar_class}" {$tanggal_bayar_style}>
+	{$tanggal_bayar_value}
+</td>
+{END tanggal_bayar_fieldcolumn}
+	{BEGIN tanggal_transfer_fieldcolumn}
+<td  class="runner-cc {$tanggal_transfer_class}" {$tanggal_transfer_style}>
+	{$tanggal_transfer_value}
+</td>
+{END tanggal_transfer_fieldcolumn}
+	{BEGIN nama_bank_fieldcolumn}
+<td  class="runner-cc {$nama_bank_class}" {$nama_bank_style}>
+	{$nama_bank_value}
+</td>
+{END nama_bank_fieldcolumn}
+	{BEGIN nama_rekening_fieldcolumn}
+<td  class="runner-cc {$nama_rekening_class}" {$nama_rekening_style}>
+	{$nama_rekening_value}
+</td>
+{END nama_rekening_fieldcolumn}
+	{BEGIN no_rekening_fieldcolumn}
+<td  class="runner-cc {$no_rekening_class}" {$no_rekening_style}>
+	{$no_rekening_value}
+</td>
+{END no_rekening_fieldcolumn}
+	{BEGIN sk_penghasilan_fieldcolumn}
+<td  class="runner-cc {$sk_penghasilan_class}" {$sk_penghasilan_style}>
+	{$sk_penghasilan_value}
+</td>
+{END sk_penghasilan_fieldcolumn}
+
+		{END grid_record}
+		<td class="runner-cr"></td>
+		{BEGIN endrecord_block}
+		<td class="runner-cs">&nbsp;</td>
+		{END endrecord_block}
+	</tr>
+{END grid_row}
+										
+								<tr class="runner-bottomrow style1">
+									<td class="runner-cl"><img src="images/spacer.gif"></td>
+									{BEGIN record_footer}
+									{BEGIN id_penghasilan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END id_penghasilan_fieldfootercolumn}
+{BEGIN nip_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END nip_fieldfootercolumn}
+{BEGIN gaji_pokok_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END gaji_pokok_fieldfootercolumn}
+{BEGIN tunjangan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tunjangan_fieldfootercolumn}
+{BEGIN insentif_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END insentif_fieldfootercolumn}
+{BEGIN bonus_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END bonus_fieldfootercolumn}
+{BEGIN thr_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END thr_fieldfootercolumn}
+{BEGIN pajak_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END pajak_fieldfootercolumn}
+{BEGIN pinjaman_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END pinjaman_fieldfootercolumn}
+{BEGIN gaji_bersih_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END gaji_bersih_fieldfootercolumn}
+{BEGIN cara_bayar_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END cara_bayar_fieldfootercolumn}
+{BEGIN tanggal_bayar_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tanggal_bayar_fieldfootercolumn}
+{BEGIN tanggal_transfer_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tanggal_transfer_fieldfootercolumn}
+{BEGIN nama_bank_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END nama_bank_fieldfootercolumn}
+{BEGIN nama_rekening_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END nama_rekening_fieldfootercolumn}
+{BEGIN no_rekening_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_rekening_fieldfootercolumn}
+{BEGIN sk_penghasilan_fieldfootercolumn}
+<td class="runner-cc runner-clast"></td>
+{END sk_penghasilan_fieldfootercolumn}
+
+									{END record_footer}
+									<td class="runner-cr"><img src="images/spacer.gif"></td>
+									{BEGIN endrecordtotals_block}
+									<td class="runner-cs"></td>
+									{END endrecordtotals_block}
+								</tr>
+
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

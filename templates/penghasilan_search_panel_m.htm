@@ -1,0 +1,95 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_id_penghasilan}
+			<a href="#" id="addSearchControl_id_penghasilan" class="addSearchControl" {$addSearchControl_id_penghasilan_attrs}>Id Penghasilan</a><br>
+		{END addSearch_id_penghasilan}
+		{BEGIN addSearch_nip}
+			<a href="#" id="addSearchControl_nip" class="addSearchControl" {$addSearchControl_nip_attrs}>Nip</a><br>
+		{END addSearch_nip}
+		{BEGIN addSearch_gaji_pokok}
+			<a href="#" id="addSearchControl_gaji_pokok" class="addSearchControl" {$addSearchControl_gaji_pokok_attrs}>Gaji Pokok</a><br>
+		{END addSearch_gaji_pokok}
+		{BEGIN addSearch_tunjangan}
+			<a href="#" id="addSearchControl_tunjangan" class="addSearchControl" {$addSearchControl_tunjangan_attrs}>Tunjangan</a><br>
+		{END addSearch_tunjangan}
+		{BEGIN addSearch_insentif}
+			<a href="#" id="addSearchControl_insentif" class="addSearchControl" {$addSearchControl_insentif_attrs}>Insentif</a><br>
+		{END addSearch_insentif}
+		{BEGIN addSearch_bonus}
+			<a href="#" id="addSearchControl_bonus" class="addSearchControl" {$addSearchControl_bonus_attrs}>Bonus</a><br>
+		{END addSearch_bonus}
+		{BEGIN addSearch_thr}
+			<a href="#" id="addSearchControl_thr" class="addSearchControl" {$addSearchControl_thr_attrs}>Thr</a><br>
+		{END addSearch_thr}
+		{BEGIN addSearch_pajak}
+			<a href="#" id="addSearchControl_pajak" class="addSearchControl" {$addSearchControl_pajak_attrs}>Pajak</a><br>
+		{END addSearch_pajak}
+		{BEGIN addSearch_pinjaman}
+			<a href="#" id="addSearchControl_pinjaman" class="addSearchControl" {$addSearchControl_pinjaman_attrs}>Pinjaman</a><br>
+		{END addSearch_pinjaman}
+		{BEGIN addSearch_gaji_bersih}
+			<a href="#" id="addSearchControl_gaji_bersih" class="addSearchControl" {$addSearchControl_gaji_bersih_attrs}>Gaji Bersih</a><br>
+		{END addSearch_gaji_bersih}
+		{BEGIN addSearch_cara_bayar}
+			<a href="#" id="addSearchControl_cara_bayar" class="addSearchControl" {$addSearchControl_cara_bayar_attrs}>Cara Bayar</a><br>
+		{END addSearch_cara_bayar}
+		{BEGIN addSearch_tanggal_bayar}
+			<a href="#" id="addSearchControl_tanggal_bayar" class="addSearchControl" {$addSearchControl_tanggal_bayar_attrs}>Tanggal Bayar</a><br>
+		{END addSearch_tanggal_bayar}
+		{BEGIN addSearch_tanggal_transfer}
+			<a href="#" id="addSearchControl_tanggal_transfer" class="addSearchControl" {$addSearchControl_tanggal_transfer_attrs}>Tanggal Transfer</a><br>
+		{END addSearch_tanggal_transfer}
+		{BEGIN addSearch_nama_bank}
+			<a href="#" id="addSearchControl_nama_bank" class="addSearchControl" {$addSearchControl_nama_bank_attrs}>Nama Bank</a><br>
+		{END addSearch_nama_bank}
+		{BEGIN addSearch_nama_rekening}
+			<a href="#" id="addSearchControl_nama_rekening" class="addSearchControl" {$addSearchControl_nama_rekening_attrs}>Nama Rekening</a><br>
+		{END addSearch_nama_rekening}
+		{BEGIN addSearch_no_rekening}
+			<a href="#" id="addSearchControl_no_rekening" class="addSearchControl" {$addSearchControl_no_rekening_attrs}>No Rekening</a><br>
+		{END addSearch_no_rekening}
+		{BEGIN addSearch_sk_penghasilan}
+			<a href="#" id="addSearchControl_sk_penghasilan" class="addSearchControl" {$addSearchControl_sk_penghasilan_attrs}>Sk Penghasilan</a><br>
+		{END addSearch_sk_penghasilan}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

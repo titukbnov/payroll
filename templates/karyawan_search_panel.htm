@@ -1,0 +1,160 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_nip}
+			<a href="#" id="addSearchControl_nip" class="addSearchControl" {$addSearchControl_nip_attrs}>Nip</a><br>
+		{END addSearch_nip}
+		{BEGIN addSearch_nama}
+			<a href="#" id="addSearchControl_nama" class="addSearchControl" {$addSearchControl_nama_attrs}>Nama</a><br>
+		{END addSearch_nama}
+		{BEGIN addSearch_jenis_kelamin}
+			<a href="#" id="addSearchControl_jenis_kelamin" class="addSearchControl" {$addSearchControl_jenis_kelamin_attrs}>Jenis Kelamin</a><br>
+		{END addSearch_jenis_kelamin}
+		{BEGIN addSearch_tempat_lahir}
+			<a href="#" id="addSearchControl_tempat_lahir" class="addSearchControl" {$addSearchControl_tempat_lahir_attrs}>Tempat Lahir</a><br>
+		{END addSearch_tempat_lahir}
+		{BEGIN addSearch_tanggal_lahir}
+			<a href="#" id="addSearchControl_tanggal_lahir" class="addSearchControl" {$addSearchControl_tanggal_lahir_attrs}>Tanggal Lahir</a><br>
+		{END addSearch_tanggal_lahir}
+		{BEGIN addSearch_golongan_darah}
+			<a href="#" id="addSearchControl_golongan_darah" class="addSearchControl" {$addSearchControl_golongan_darah_attrs}>Golongan Darah</a><br>
+		{END addSearch_golongan_darah}
+		{BEGIN addSearch_agama}
+			<a href="#" id="addSearchControl_agama" class="addSearchControl" {$addSearchControl_agama_attrs}>Agama</a><br>
+		{END addSearch_agama}
+		{BEGIN addSearch_status_pernikahan}
+			<a href="#" id="addSearchControl_status_pernikahan" class="addSearchControl" {$addSearchControl_status_pernikahan_attrs}>Status Pernikahan</a><br>
+		{END addSearch_status_pernikahan}
+		{BEGIN addSearch_alamat_lengkap}
+			<a href="#" id="addSearchControl_alamat_lengkap" class="addSearchControl" {$addSearchControl_alamat_lengkap_attrs}>Alamat Lengkap</a><br>
+		{END addSearch_alamat_lengkap}
+		{BEGIN addSearch_telepon_rumah}
+			<a href="#" id="addSearchControl_telepon_rumah" class="addSearchControl" {$addSearchControl_telepon_rumah_attrs}>Telepon Rumah</a><br>
+		{END addSearch_telepon_rumah}
+		{BEGIN addSearch_ponsel}
+			<a href="#" id="addSearchControl_ponsel" class="addSearchControl" {$addSearchControl_ponsel_attrs}>Ponsel</a><br>
+		{END addSearch_ponsel}
+		{BEGIN addSearch_email}
+			<a href="#" id="addSearchControl_email" class="addSearchControl" {$addSearchControl_email_attrs}>Email</a><br>
+		{END addSearch_email}
+		{BEGIN addSearch_hobi}
+			<a href="#" id="addSearchControl_hobi" class="addSearchControl" {$addSearchControl_hobi_attrs}>Hobi</a><br>
+		{END addSearch_hobi}
+		{BEGIN addSearch_pendidikan}
+			<a href="#" id="addSearchControl_pendidikan" class="addSearchControl" {$addSearchControl_pendidikan_attrs}>Pendidikan</a><br>
+		{END addSearch_pendidikan}
+		{BEGIN addSearch_tanggal_masuk}
+			<a href="#" id="addSearchControl_tanggal_masuk" class="addSearchControl" {$addSearchControl_tanggal_masuk_attrs}>Tanggal Masuk</a><br>
+		{END addSearch_tanggal_masuk}
+		{BEGIN addSearch_status_kerja}
+			<a href="#" id="addSearchControl_status_kerja" class="addSearchControl" {$addSearchControl_status_kerja_attrs}>Status Kerja</a><br>
+		{END addSearch_status_kerja}
+		{BEGIN addSearch_departemen}
+			<a href="#" id="addSearchControl_departemen" class="addSearchControl" {$addSearchControl_departemen_attrs}>Departemen</a><br>
+		{END addSearch_departemen}
+		{BEGIN addSearch_organisasi}
+			<a href="#" id="addSearchControl_organisasi" class="addSearchControl" {$addSearchControl_organisasi_attrs}>Organisasi</a><br>
+		{END addSearch_organisasi}
+		{BEGIN addSearch_golongan}
+			<a href="#" id="addSearchControl_golongan" class="addSearchControl" {$addSearchControl_golongan_attrs}>Golongan</a><br>
+		{END addSearch_golongan}
+		{BEGIN addSearch_jabatan}
+			<a href="#" id="addSearchControl_jabatan" class="addSearchControl" {$addSearchControl_jabatan_attrs}>Jabatan</a><br>
+		{END addSearch_jabatan}
+		{BEGIN addSearch_no_ktp}
+			<a href="#" id="addSearchControl_no_ktp" class="addSearchControl" {$addSearchControl_no_ktp_attrs}>No Ktp</a><br>
+		{END addSearch_no_ktp}
+		{BEGIN addSearch_no_sim}
+			<a href="#" id="addSearchControl_no_sim" class="addSearchControl" {$addSearchControl_no_sim_attrs}>No Sim</a><br>
+		{END addSearch_no_sim}
+		{BEGIN addSearch_no_paspor}
+			<a href="#" id="addSearchControl_no_paspor" class="addSearchControl" {$addSearchControl_no_paspor_attrs}>No Paspor</a><br>
+		{END addSearch_no_paspor}
+		{BEGIN addSearch_no_npwp}
+			<a href="#" id="addSearchControl_no_npwp" class="addSearchControl" {$addSearchControl_no_npwp_attrs}>No Npwp</a><br>
+		{END addSearch_no_npwp}
+		{BEGIN addSearch_no_jamsostek}
+			<a href="#" id="addSearchControl_no_jamsostek" class="addSearchControl" {$addSearchControl_no_jamsostek_attrs}>No Jamsostek</a><br>
+		{END addSearch_no_jamsostek}
+		{BEGIN addSearch_no_asuransi}
+			<a href="#" id="addSearchControl_no_asuransi" class="addSearchControl" {$addSearchControl_no_asuransi_attrs}>No Asuransi</a><br>
+		{END addSearch_no_asuransi}
+		{BEGIN addSearch_no_pensiun}
+			<a href="#" id="addSearchControl_no_pensiun" class="addSearchControl" {$addSearchControl_no_pensiun_attrs}>No Pensiun</a><br>
+		{END addSearch_no_pensiun}
+		{BEGIN addSearch_pensiun}
+			<a href="#" id="addSearchControl_pensiun" class="addSearchControl" {$addSearchControl_pensiun_attrs}>Pensiun</a><br>
+		{END addSearch_pensiun}
+		{BEGIN addSearch_tanggal_pensiun}
+			<a href="#" id="addSearchControl_tanggal_pensiun" class="addSearchControl" {$addSearchControl_tanggal_pensiun_attrs}>Tanggal Pensiun</a><br>
+		{END addSearch_tanggal_pensiun}
+		{BEGIN addSearch_foto}
+			<a href="#" id="addSearchControl_foto" class="addSearchControl" {$addSearchControl_foto_attrs}>Foto</a><br>
+		{END addSearch_foto}
+		{BEGIN addSearch_sk_tambahan}
+			<a href="#" id="addSearchControl_sk_tambahan" class="addSearchControl" {$addSearchControl_sk_tambahan_attrs}>Sk Tambahan</a><br>
+		{END addSearch_sk_tambahan}
+		{BEGIN addSearch_keterangan}
+			<a href="#" id="addSearchControl_keterangan" class="addSearchControl" {$addSearchControl_keterangan_attrs}>Keterangan</a><br>
+		{END addSearch_keterangan}
+		{BEGIN addSearch_id_login}
+			<a href="#" id="addSearchControl_id_login" class="addSearchControl" {$addSearchControl_id_login_attrs}>Id Login</a><br>
+		{END addSearch_id_login}
+		{BEGIN addSearch_id_pelatihan}
+			<a href="#" id="addSearchControl_id_pelatihan" class="addSearchControl" {$addSearchControl_id_pelatihan_attrs}>Id Pelatihan</a><br>
+		{END addSearch_id_pelatihan}
+		{BEGIN addSearch_id_penghasilan}
+			<a href="#" id="addSearchControl_id_penghasilan" class="addSearchControl" {$addSearchControl_id_penghasilan_attrs}>Id Penghasilan</a><br>
+		{END addSearch_id_penghasilan}
+		{BEGIN addSearch_id_penilaian}
+			<a href="#" id="addSearchControl_id_penilaian" class="addSearchControl" {$addSearchControl_id_penilaian_attrs}>Id Penilaian</a><br>
+		{END addSearch_id_penilaian}
+		{BEGIN addSearch_id_absensi}
+			<a href="#" id="addSearchControl_id_absensi" class="addSearchControl" {$addSearchControl_id_absensi_attrs}>Id Absensi</a><br>
+		{END addSearch_id_absensi}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="runner-searchtype">{$searchtype}</div>
+				<div class="runner-searchcontrol">{$searchcontrol}</div>
+				<div class="runner-searchcontrol">{$searchcontrol1}</div>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

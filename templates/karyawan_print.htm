@@ -1,0 +1,607 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Karyawan</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="runner-s-grid">	
+	<table class="runner-c runner-c-grid" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+		<tr class="runner-toprow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			{BEGIN record_header}
+					{BEGIN nip_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN nip_fieldheader}
+	<b>Nip</b>
+	{END nip_fieldheader}
+</th>
+{END nip_fieldheadercolumn}
+	{BEGIN nama_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN nama_fieldheader}
+	<b>Nama</b>
+	{END nama_fieldheader}
+</th>
+{END nama_fieldheadercolumn}
+	{BEGIN jenis_kelamin_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN jenis_kelamin_fieldheader}
+	<b>Jenis Kelamin</b>
+	{END jenis_kelamin_fieldheader}
+</th>
+{END jenis_kelamin_fieldheadercolumn}
+	{BEGIN tempat_lahir_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tempat_lahir_fieldheader}
+	<b>Tempat Lahir</b>
+	{END tempat_lahir_fieldheader}
+</th>
+{END tempat_lahir_fieldheadercolumn}
+	{BEGIN tanggal_lahir_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tanggal_lahir_fieldheader}
+	<b>Tanggal Lahir</b>
+	{END tanggal_lahir_fieldheader}
+</th>
+{END tanggal_lahir_fieldheadercolumn}
+	{BEGIN golongan_darah_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN golongan_darah_fieldheader}
+	<b>Golongan Darah</b>
+	{END golongan_darah_fieldheader}
+</th>
+{END golongan_darah_fieldheadercolumn}
+	{BEGIN agama_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN agama_fieldheader}
+	<b>Agama</b>
+	{END agama_fieldheader}
+</th>
+{END agama_fieldheadercolumn}
+	{BEGIN status_pernikahan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN status_pernikahan_fieldheader}
+	<b>Status Pernikahan</b>
+	{END status_pernikahan_fieldheader}
+</th>
+{END status_pernikahan_fieldheadercolumn}
+	{BEGIN alamat_lengkap_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN alamat_lengkap_fieldheader}
+	<b>Alamat Lengkap</b>
+	{END alamat_lengkap_fieldheader}
+</th>
+{END alamat_lengkap_fieldheadercolumn}
+	{BEGIN telepon_rumah_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN telepon_rumah_fieldheader}
+	<b>Telepon Rumah</b>
+	{END telepon_rumah_fieldheader}
+</th>
+{END telepon_rumah_fieldheadercolumn}
+	{BEGIN ponsel_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN ponsel_fieldheader}
+	<b>Ponsel</b>
+	{END ponsel_fieldheader}
+</th>
+{END ponsel_fieldheadercolumn}
+	{BEGIN email_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN email_fieldheader}
+	<b>Email</b>
+	{END email_fieldheader}
+</th>
+{END email_fieldheadercolumn}
+	{BEGIN hobi_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN hobi_fieldheader}
+	<b>Hobi</b>
+	{END hobi_fieldheader}
+</th>
+{END hobi_fieldheadercolumn}
+	{BEGIN pendidikan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN pendidikan_fieldheader}
+	<b>Pendidikan</b>
+	{END pendidikan_fieldheader}
+</th>
+{END pendidikan_fieldheadercolumn}
+	{BEGIN tanggal_masuk_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tanggal_masuk_fieldheader}
+	<b>Tanggal Masuk</b>
+	{END tanggal_masuk_fieldheader}
+</th>
+{END tanggal_masuk_fieldheadercolumn}
+	{BEGIN status_kerja_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN status_kerja_fieldheader}
+	<b>Status Kerja</b>
+	{END status_kerja_fieldheader}
+</th>
+{END status_kerja_fieldheadercolumn}
+	{BEGIN departemen_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN departemen_fieldheader}
+	<b>Departemen</b>
+	{END departemen_fieldheader}
+</th>
+{END departemen_fieldheadercolumn}
+	{BEGIN organisasi_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN organisasi_fieldheader}
+	<b>Organisasi</b>
+	{END organisasi_fieldheader}
+</th>
+{END organisasi_fieldheadercolumn}
+	{BEGIN golongan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN golongan_fieldheader}
+	<b>Golongan</b>
+	{END golongan_fieldheader}
+</th>
+{END golongan_fieldheadercolumn}
+	{BEGIN jabatan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN jabatan_fieldheader}
+	<b>Jabatan</b>
+	{END jabatan_fieldheader}
+</th>
+{END jabatan_fieldheadercolumn}
+	{BEGIN no_ktp_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_ktp_fieldheader}
+	<b>No Ktp</b>
+	{END no_ktp_fieldheader}
+</th>
+{END no_ktp_fieldheadercolumn}
+	{BEGIN no_sim_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_sim_fieldheader}
+	<b>No Sim</b>
+	{END no_sim_fieldheader}
+</th>
+{END no_sim_fieldheadercolumn}
+	{BEGIN no_paspor_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_paspor_fieldheader}
+	<b>No Paspor</b>
+	{END no_paspor_fieldheader}
+</th>
+{END no_paspor_fieldheadercolumn}
+	{BEGIN no_npwp_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_npwp_fieldheader}
+	<b>No Npwp</b>
+	{END no_npwp_fieldheader}
+</th>
+{END no_npwp_fieldheadercolumn}
+	{BEGIN no_jamsostek_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_jamsostek_fieldheader}
+	<b>No Jamsostek</b>
+	{END no_jamsostek_fieldheader}
+</th>
+{END no_jamsostek_fieldheadercolumn}
+	{BEGIN no_asuransi_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_asuransi_fieldheader}
+	<b>No Asuransi</b>
+	{END no_asuransi_fieldheader}
+</th>
+{END no_asuransi_fieldheadercolumn}
+	{BEGIN no_pensiun_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN no_pensiun_fieldheader}
+	<b>No Pensiun</b>
+	{END no_pensiun_fieldheader}
+</th>
+{END no_pensiun_fieldheadercolumn}
+	{BEGIN pensiun_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN pensiun_fieldheader}
+	<b>Pensiun</b>
+	{END pensiun_fieldheader}
+</th>
+{END pensiun_fieldheadercolumn}
+	{BEGIN tanggal_pensiun_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN tanggal_pensiun_fieldheader}
+	<b>Tanggal Pensiun</b>
+	{END tanggal_pensiun_fieldheader}
+</th>
+{END tanggal_pensiun_fieldheadercolumn}
+	{BEGIN foto_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN foto_fieldheader}
+	<b>Foto</b>
+	{END foto_fieldheader}
+</th>
+{END foto_fieldheadercolumn}
+	{BEGIN sk_tambahan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN sk_tambahan_fieldheader}
+	<b>Sk Tambahan</b>
+	{END sk_tambahan_fieldheader}
+</th>
+{END sk_tambahan_fieldheadercolumn}
+	{BEGIN keterangan_fieldheadercolumn}
+<th class="runner-cc">
+	{BEGIN keterangan_fieldheader}
+	<b>Keterangan</b>
+	{END keterangan_fieldheader}
+</th>
+{END keterangan_fieldheadercolumn}
+		
+			{END record_header}
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+			{BEGIN endrecordheader_block}
+			<td class="runner-cs">&nbsp;</td>
+			{END endrecordheader_block}
+		</tr>
+	{END grid_header}
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="runner-row style1" {$rowattrs} {$rowstyle} {$rowstyle}>
+		<td class="runner-cl"></td>
+		{BEGIN grid_record}
+				{BEGIN nip_fieldcolumn}
+<td  class="runner-cc {$nip_class}" {$nip_style}>
+	{$nip_value}
+</td>
+{END nip_fieldcolumn}
+	{BEGIN nama_fieldcolumn}
+<td  class="runner-cc {$nama_class}" {$nama_style}>
+	{$nama_value}
+</td>
+{END nama_fieldcolumn}
+	{BEGIN jenis_kelamin_fieldcolumn}
+<td  class="runner-cc {$jenis_kelamin_class}" {$jenis_kelamin_style}>
+	{$jenis_kelamin_value}
+</td>
+{END jenis_kelamin_fieldcolumn}
+	{BEGIN tempat_lahir_fieldcolumn}
+<td  class="runner-cc {$tempat_lahir_class}" {$tempat_lahir_style}>
+	{$tempat_lahir_value}
+</td>
+{END tempat_lahir_fieldcolumn}
+	{BEGIN tanggal_lahir_fieldcolumn}
+<td  class="runner-cc {$tanggal_lahir_class}" {$tanggal_lahir_style}>
+	{$tanggal_lahir_value}
+</td>
+{END tanggal_lahir_fieldcolumn}
+	{BEGIN golongan_darah_fieldcolumn}
+<td  class="runner-cc {$golongan_darah_class}" {$golongan_darah_style}>
+	{$golongan_darah_value}
+</td>
+{END golongan_darah_fieldcolumn}
+	{BEGIN agama_fieldcolumn}
+<td  class="runner-cc {$agama_class}" {$agama_style}>
+	{$agama_value}
+</td>
+{END agama_fieldcolumn}
+	{BEGIN status_pernikahan_fieldcolumn}
+<td  class="runner-cc {$status_pernikahan_class}" {$status_pernikahan_style}>
+	{$status_pernikahan_value}
+</td>
+{END status_pernikahan_fieldcolumn}
+	{BEGIN alamat_lengkap_fieldcolumn}
+<td  class="runner-cc {$alamat_lengkap_class}" {$alamat_lengkap_style}>
+	{$alamat_lengkap_value}
+</td>
+{END alamat_lengkap_fieldcolumn}
+	{BEGIN telepon_rumah_fieldcolumn}
+<td  class="runner-cc {$telepon_rumah_class}" {$telepon_rumah_style}>
+	{$telepon_rumah_value}
+</td>
+{END telepon_rumah_fieldcolumn}
+	{BEGIN ponsel_fieldcolumn}
+<td  class="runner-cc {$ponsel_class}" {$ponsel_style}>
+	{$ponsel_value}
+</td>
+{END ponsel_fieldcolumn}
+	{BEGIN email_fieldcolumn}
+<td  class="runner-cc {$email_class}" {$email_style}>
+	{$email_value}
+</td>
+{END email_fieldcolumn}
+	{BEGIN hobi_fieldcolumn}
+<td  class="runner-cc {$hobi_class}" {$hobi_style}>
+	{$hobi_value}
+</td>
+{END hobi_fieldcolumn}
+	{BEGIN pendidikan_fieldcolumn}
+<td  class="runner-cc {$pendidikan_class}" {$pendidikan_style}>
+	{$pendidikan_value}
+</td>
+{END pendidikan_fieldcolumn}
+	{BEGIN tanggal_masuk_fieldcolumn}
+<td  class="runner-cc {$tanggal_masuk_class}" {$tanggal_masuk_style}>
+	{$tanggal_masuk_value}
+</td>
+{END tanggal_masuk_fieldcolumn}
+	{BEGIN status_kerja_fieldcolumn}
+<td  class="runner-cc {$status_kerja_class}" {$status_kerja_style}>
+	{$status_kerja_value}
+</td>
+{END status_kerja_fieldcolumn}
+	{BEGIN departemen_fieldcolumn}
+<td  class="runner-cc {$departemen_class}" {$departemen_style}>
+	{$departemen_value}
+</td>
+{END departemen_fieldcolumn}
+	{BEGIN organisasi_fieldcolumn}
+<td  class="runner-cc {$organisasi_class}" {$organisasi_style}>
+	{$organisasi_value}
+</td>
+{END organisasi_fieldcolumn}
+	{BEGIN golongan_fieldcolumn}
+<td  class="runner-cc {$golongan_class}" {$golongan_style}>
+	{$golongan_value}
+</td>
+{END golongan_fieldcolumn}
+	{BEGIN jabatan_fieldcolumn}
+<td  class="runner-cc {$jabatan_class}" {$jabatan_style}>
+	{$jabatan_value}
+</td>
+{END jabatan_fieldcolumn}
+	{BEGIN no_ktp_fieldcolumn}
+<td  class="runner-cc {$no_ktp_class}" {$no_ktp_style}>
+	{$no_ktp_value}
+</td>
+{END no_ktp_fieldcolumn}
+	{BEGIN no_sim_fieldcolumn}
+<td  class="runner-cc {$no_sim_class}" {$no_sim_style}>
+	{$no_sim_value}
+</td>
+{END no_sim_fieldcolumn}
+	{BEGIN no_paspor_fieldcolumn}
+<td  class="runner-cc {$no_paspor_class}" {$no_paspor_style}>
+	{$no_paspor_value}
+</td>
+{END no_paspor_fieldcolumn}
+	{BEGIN no_npwp_fieldcolumn}
+<td  class="runner-cc {$no_npwp_class}" {$no_npwp_style}>
+	{$no_npwp_value}
+</td>
+{END no_npwp_fieldcolumn}
+	{BEGIN no_jamsostek_fieldcolumn}
+<td  class="runner-cc {$no_jamsostek_class}" {$no_jamsostek_style}>
+	{$no_jamsostek_value}
+</td>
+{END no_jamsostek_fieldcolumn}
+	{BEGIN no_asuransi_fieldcolumn}
+<td  class="runner-cc {$no_asuransi_class}" {$no_asuransi_style}>
+	{$no_asuransi_value}
+</td>
+{END no_asuransi_fieldcolumn}
+	{BEGIN no_pensiun_fieldcolumn}
+<td  class="runner-cc {$no_pensiun_class}" {$no_pensiun_style}>
+	{$no_pensiun_value}
+</td>
+{END no_pensiun_fieldcolumn}
+	{BEGIN pensiun_fieldcolumn}
+<td  class="runner-cc {$pensiun_class}" {$pensiun_style}>
+	{$pensiun_value}
+</td>
+{END pensiun_fieldcolumn}
+	{BEGIN tanggal_pensiun_fieldcolumn}
+<td  class="runner-cc {$tanggal_pensiun_class}" {$tanggal_pensiun_style}>
+	{$tanggal_pensiun_value}
+</td>
+{END tanggal_pensiun_fieldcolumn}
+	{BEGIN foto_fieldcolumn}
+<td  class="runner-cc {$foto_class}" {$foto_style}>
+	{$foto_value}
+</td>
+{END foto_fieldcolumn}
+	{BEGIN sk_tambahan_fieldcolumn}
+<td  class="runner-cc {$sk_tambahan_class}" {$sk_tambahan_style}>
+	{$sk_tambahan_value}
+</td>
+{END sk_tambahan_fieldcolumn}
+	{BEGIN keterangan_fieldcolumn}
+<td  class="runner-cc {$keterangan_class}" {$keterangan_style}>
+	{$keterangan_value}
+</td>
+{END keterangan_fieldcolumn}
+
+		{END grid_record}
+		<td class="runner-cr"></td>
+		{BEGIN endrecord_block}
+		<td class="runner-cs">&nbsp;</td>
+		{END endrecord_block}
+	</tr>
+{END grid_row}
+										
+								<tr class="runner-bottomrow style1">
+									<td class="runner-cl"><img src="images/spacer.gif"></td>
+									{BEGIN record_footer}
+									{BEGIN nip_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END nip_fieldfootercolumn}
+{BEGIN nama_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END nama_fieldfootercolumn}
+{BEGIN jenis_kelamin_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END jenis_kelamin_fieldfootercolumn}
+{BEGIN tempat_lahir_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tempat_lahir_fieldfootercolumn}
+{BEGIN tanggal_lahir_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tanggal_lahir_fieldfootercolumn}
+{BEGIN golongan_darah_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END golongan_darah_fieldfootercolumn}
+{BEGIN agama_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END agama_fieldfootercolumn}
+{BEGIN status_pernikahan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END status_pernikahan_fieldfootercolumn}
+{BEGIN alamat_lengkap_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END alamat_lengkap_fieldfootercolumn}
+{BEGIN telepon_rumah_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END telepon_rumah_fieldfootercolumn}
+{BEGIN ponsel_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END ponsel_fieldfootercolumn}
+{BEGIN email_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END email_fieldfootercolumn}
+{BEGIN hobi_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END hobi_fieldfootercolumn}
+{BEGIN pendidikan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END pendidikan_fieldfootercolumn}
+{BEGIN tanggal_masuk_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tanggal_masuk_fieldfootercolumn}
+{BEGIN status_kerja_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END status_kerja_fieldfootercolumn}
+{BEGIN departemen_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END departemen_fieldfootercolumn}
+{BEGIN organisasi_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END organisasi_fieldfootercolumn}
+{BEGIN golongan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END golongan_fieldfootercolumn}
+{BEGIN jabatan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END jabatan_fieldfootercolumn}
+{BEGIN no_ktp_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_ktp_fieldfootercolumn}
+{BEGIN no_sim_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_sim_fieldfootercolumn}
+{BEGIN no_paspor_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_paspor_fieldfootercolumn}
+{BEGIN no_npwp_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_npwp_fieldfootercolumn}
+{BEGIN no_jamsostek_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_jamsostek_fieldfootercolumn}
+{BEGIN no_asuransi_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_asuransi_fieldfootercolumn}
+{BEGIN no_pensiun_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END no_pensiun_fieldfootercolumn}
+{BEGIN pensiun_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END pensiun_fieldfootercolumn}
+{BEGIN tanggal_pensiun_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END tanggal_pensiun_fieldfootercolumn}
+{BEGIN foto_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END foto_fieldfootercolumn}
+{BEGIN sk_tambahan_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END sk_tambahan_fieldfootercolumn}
+{BEGIN keterangan_fieldfootercolumn}
+<td class="runner-cc runner-clast"></td>
+{END keterangan_fieldfootercolumn}
+
+									{END record_footer}
+									<td class="runner-cr"><img src="images/spacer.gif"></td>
+									{BEGIN endrecordtotals_block}
+									<td class="runner-cs"></td>
+									{END endrecordtotals_block}
+								</tr>
+
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>
